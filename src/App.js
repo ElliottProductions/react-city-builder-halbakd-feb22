@@ -41,9 +41,7 @@ function App() {
           
           In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state 
           */}
-          <img width={200} src={`${waterfrontId}.jpeg`}/>
-          <img width={200} src={`${castleId}.jpeg`}/>
-          <img width={200} src={`${skylineId}.jpeg`}/>
+          
           <WaterfrontDropdown setWaterFrontId={setWaterFrontId}/>
           <CastleDropdown setCastleId={setCastleId}/>
           <SkylineDropdown setSkyLineId={setSkyLineId}/>
