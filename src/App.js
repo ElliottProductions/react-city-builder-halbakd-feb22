@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import SkylineDropdown from './SkylineDropdown';
-import WaterfrontDropdown from './WaterfrontDropdown';
-import CastleDropdown from './CastleDropdown';
 import SloganList from './SloganList';
 import SloganForm from './SloganForm';
 import CityNameInput from './CityNameInput';
 import City from './City';
+import DropDown from './DropDown';
+
 
 function App() {
   // track some state here.
@@ -41,10 +40,10 @@ function App() {
           
           In each Dropdown, pass as props the state handler functions defined above, so that these child components can manipulate parent state 
           */}
-          
-          <WaterfrontDropdown setWaterFrontId={setWaterFrontId}/>
-          <CastleDropdown setCastleId={setCastleId}/>
-          <SkylineDropdown setSkyLineId={setSkyLineId}/>
+          <DropDown id={setWaterFrontId} idName={'Waterfront'}/>
+          <DropDown id={setCastleId} idName={'Castle'}/>
+          <DropDown id={setSkyLineId} idName={'Skyline'}/>
+        
 
         </section>
         {/* here, the SloganForm component takes in the setSlogans state handler function and the slogans array that live in state */}
