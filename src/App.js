@@ -10,6 +10,11 @@ import City from './City';
 
 function App() {
   // track some state here.
+  const [skylineId, setSkyLineId] = useState(1);
+  const [waterfrontId, setWaterFrontId] = useState(1);
+  const [castleId, setCastleId] = useState(1);
+
+
   // You'll need to keep track of a skylineId, waterfrontId, and castleId. All these start out as 1
   // you'll need to track a city name, which starts as the city name of your choice.
   // finally, you'll need an array of slogans, which could start out as ['The City of Excellence'] for example
